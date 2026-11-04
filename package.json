@@ -1,0 +1,14 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "private": true,
+  "description": "URL shortener: Express + MongoDB API, Next.js frontend",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix web install",
+    "dev": "node scripts/dev.mjs",
+    "build": "npm --prefix web run build",
+    "start": "node scripts/dev.mjs --prod",
+    "test": "npm --prefix server test"
+  },
+  "engines": { "node": ">=20.6" }
+}

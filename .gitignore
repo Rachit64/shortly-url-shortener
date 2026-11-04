@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Build output and caches
+.next/
+out/
+dist/
+build/
+.cache/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+
+# Local configuration and secrets (keep safe examples)
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+
+# Local MongoDB files and logs
+.data/
+*.log
+
+# Operating system, editor, and local assistant files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+.claude/
+.codex/
+graphify-out/

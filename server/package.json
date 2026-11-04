@@ -1,0 +1,23 @@
+{
+  "name": "shortener-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "URL shortener API (Express + MongoDB)",
+  "engines": { "node": ">=20.6" },
+  "scripts": {
+    "dev": "node --watch --env-file-if-exists=.env src/index.js",
+    "start": "node --env-file-if-exists=.env src/index.js",
+    "test": "node --test --test-concurrency=1 test/"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.2",
+    "helmet": "^8.3.0",
+    "mongoose": "^9.11.4"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.3.0"
+  }
+}
